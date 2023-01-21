@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        (function selfInvoking() {        
+            alert("Self Invoked Function ");             
+        })();
+        function nonselfInvoking() {
+            alert("this shouldnt work");
+        };
+        (function newgame() {
+           board = new Array(9);
+           alert("newgame function called - 5 loops");            
+            
+            for (let loop = 0; loop < 5; loop++) {               
+                board[loop] = loop;
+                alert("Loop = " + loop);
+            }
+            alert("Finished");
+                     
+        })();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
