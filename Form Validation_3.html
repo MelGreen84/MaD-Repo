@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<!--- Simple numeric validation using online .jsp -->
+<html>
+<head>
+    <title>Form Validation_3 - basic numeric</title>
+    <script>
+        function validate(){
+        var num=document.myform.num.value;
+        if (isNaN(num)){
+          document.getElementById("numloc").innerHTML="\n Enter Numeric value only";
+          return false;
+        }else{
+          return true;
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform" action="formaction.html" onsubmit="return validate()">
+        Number: <input type="text" name="num" style="width:50px"><span id="numloc"></span><br />
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
