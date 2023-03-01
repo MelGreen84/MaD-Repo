@@ -4,15 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is Mel</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Hamburger menu item -->
+    <script src="https://kit.fontawesome.com/d129bbdec1.js" crossorigin="anonymous"></script>
+
 </head>
 
+<!-- Header -->
+<header>
+
+    <div class="navcontainer">
+        <nav>
+            <span class="nav-toggle" id="js-nav-toggle">
+                <div class="icon nav-icon-3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </span>
+            <ul id="js-menu">
+                <li><a href="https://melgreen84.github.io/GPigs-project/index.html">Seniors</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/short_haired.html">Greens</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/long_haired.html">Neals</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/images.html">Kiddies</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/images.html">Mel</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/images.html">Ju</a></li>
+                <li><a href="https://melgreen84.github.io/GPigs-project/images.html">All</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <body>
-    Hello dad :)
-    This is fantastic - a GitHub success
-    Hooray!
-    This is a github edit
+    <div class="maindiv">
+        Add content here
+    </div>
+    <footer>footer to check the page is working properly</footer>
+
 </body>
+<script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-nav-toggle");
+
+    navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+    });</script>
+
+<script> const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            icon.classList.toggle("open");
+        });
+    });</script>
+
+
 
 </html>
